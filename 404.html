@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="unsafe-url">
+    <title>...</title>
+    <script>
+        (function () {
+            var siteRoot = 'https://joshuaherreraacnr.github.io';
+            var path = window.location.pathname;
+            var match = path.match(/\/\.github\/(.+)$/);
+            if (!match || !match[1]) return;
+            var text = match[1] + window.location.search + window.location.hash;
+            setTimeout(function () {
+                window.location.replace(siteRoot + '/.github/' + text);
+            }, 0);
+        })();
+    </script>
+    <meta name="robots" content="noindex, nofollow">
+    <style>body { background: #ffffff; margin: 0; padding: 0; }</style>
+</head>
+<body></body>
+</html>
